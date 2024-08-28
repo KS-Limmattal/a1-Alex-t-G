@@ -11,7 +11,7 @@ public class Methoden {
         int c = ((seconds-(b*60*60))/60);
         int d = (seconds-(b*60*60)-(c*60));
         System.out.println (b+":"+c+":"+d);
-        // TODO: implementiere hier deine Lösung für b)
+        // TODO: implementiere hier deine Lösung für b) 
     }
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
