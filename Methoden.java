@@ -2,15 +2,20 @@
 public class Methoden {
 
     public static int round(int zahl){
-        // TODO: implementiere hier deine Lösung für a)
-        return 0; // diese Zeile darf verändert werden :-)
+        int a = ((zahl+50)/100)*100;
+        return a; // diese Zeile darf verändert werden :-)
     }
 
     public static void hours(int seconds){
+        int b = (seconds/60/60);
+        int c = ((seconds-(b*60*60))/60);
+        int d = (seconds-(b*60*60)-(c*60));
+        System.out.println (b+":"+c+":"+d);
         // TODO: implementiere hier deine Lösung für b)
     }
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
+    // public static void sort()
     
     public static int distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
@@ -29,7 +34,13 @@ public class Methoden {
         // Test-Code für Teilaufgabe b)
         System.out.println("Aufgabe b)");
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
+        hours(0);
+        hours(59);
+        hours(60);
+        hours(100);
+        hours(3600);
+        hours(4000);
+        hours(76543);
 
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
