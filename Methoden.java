@@ -15,8 +15,29 @@ public class Methoden {
     }
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
-    // public static void sort()
-    
+    public static void sort(int e, int f, int g);
+    if (e > f > g) {
+        System.out.println( e " >" f ">" g);
+      }
+    if (g > f > e) {
+        System.out.println(g">"f">"e);
+      }
+    if (f > g > e) {
+        System.out.println(f">"g">"e);
+      }
+    if (f > e > g) {
+        System.out.println(f">"e">"g);
+      }
+    if (g > e > f) {
+        System.out.println(g">"e">"f);
+      }
+    if (e > g > f) {
+        System.out.println(e">"g">"f);
+      }
+
+
+
+
     public static int distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
         return 0; // diese Zeile darf verändert werden
