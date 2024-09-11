@@ -15,12 +15,60 @@ public class Methoden {
     }
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
-    // public static void sort()
-    
-    public static int distance(double x1, double y1, double x2, double y2){
-        // TODO: implementiere hier deine Lösung für d)
-        return 0; // diese Zeile darf verändert werden
+    public static void sort(int e, int f, int g){
+        if (e > f && f > g) {
+            System.out.println( e + ">" + f + ">" + g);
+        }
+        if (e > g && g > f) {
+            System.out.println(e+">"+g+">"+f);
+        }
+        if (g > f && f > e) {
+            System.out.println(g + ">" + f + ">" + e);
+        }
+        if (g > e && e > f) {
+            System.out.println(g+">"+e+">"+f);
+        }
+        if (f > g && g > e) {
+            System.out.println(f+">"+g+">"+e);
+        }
+        if (f > e && e > g) {
+            System.out.println(f+">"+e+">"+g);
+        }
+        if (f == e && e > g) {
+            System.out.println(f+"="+e+">"+g);
+        }
+        if (f == g && g > e) {
+            System.out.println(f+"="+g+">"+e);
+        }
+        if (g == e && e > f) {
+            System.out.println(g+"="+e+">"+f);
+        }
+        if (f == e && e < g) {
+            System.out.println(g+">"+f+"="+e);
+        }
+        if (f == g && g < e) {
+            System.out.println(e+">"+f+"="+g);
+        }
+        if (g == e && e < f) {
+            System.out.println(f+">"+g+"="+e);
+        }
+
+        if (g == f && f == e) {
+            System.out.println(g+"="+f+"="+e);
+        }
     }
+
+
+    public static double distance(double x1, double y1, double x2, double y2){
+        // TODO: implementiere hier deine Lösung für d)
+        double d;
+        d = Math.sqrt (Math.pow (Math.abs(x1 - x2), 2) + Math.pow (Math.abs(y1 - y2), 2)) ;
+        return d; // diese Zeile darf verändert werden
+    }
+
+
+ 
+
 
         public static void main(String[] args){
         // Test-Code für Teilaufgabe a)
@@ -33,7 +81,7 @@ public class Methoden {
 
         // Test-Code für Teilaufgabe b)
         System.out.println("Aufgabe b)");
-        // TODO: Schreibe Testcode für die Aufgabe
+        // DONE: Schreibe Testcode für die Aufgabe
         hours(0);
         hours(59);
         hours(60);
@@ -45,20 +93,23 @@ public class Methoden {
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
         // Test-Code ent-kommentieren, sobald die Funktion programmiert ist
-        // sort(1, 2, 3);
-        // sort(1, 3, 2);
-        // sort(2, 1, 3);
-        // sort(2, 3, 1);
-        // sort(3, 1, 2);
-        // sort(3, 2, 1);
-        // sort(1, 3, 3);
-        // sort(-1, -1, -1));
+        sort(1, 2, 3);
+        sort(1, 3, 2);
+        sort(2, 1, 3);
+        sort(2, 3, 1);
+        sort(3, 1, 2);
+        sort(3, 2, 1);
+        sort(1, 3, 3);
+        sort(-1, -1, -1);
         System.out.println();
 
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
+        System.out.println(distance(4, 2, 10, 8));
+        System.out.println(distance(-4, -2, -10, -8));
+        System.out.println(distance(-2, -2, 3,3));
+
     }
     
 }
