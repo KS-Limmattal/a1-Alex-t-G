@@ -59,15 +59,15 @@ public class Methoden {
     }
 
 
-    public static int distance(double x1, double y1, double x2, double y2){
+    public static double distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
-        return 0; // diese Zeile darf verändert werden
-
-        
+        double d;
+        d = Math.sqrt (Math.pow (Math.abs(x1 - x2), 2) + Math.pow (Math.abs(y1 - y2), 2)) ;
+        return d; // diese Zeile darf verändert werden
     }
 
 
-
+ 
 
 
         public static void main(String[] args){
@@ -81,7 +81,7 @@ public class Methoden {
 
         // Test-Code für Teilaufgabe b)
         System.out.println("Aufgabe b)");
-        // TODO: Schreibe Testcode für die Aufgabe
+        // DONE: Schreibe Testcode für die Aufgabe
         hours(0);
         hours(59);
         hours(60);
@@ -106,7 +106,10 @@ public class Methoden {
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
+        System.out.println(distance(4, 2, 10, 8));
+        System.out.println(distance(-4, -2, -10, -8));
+        System.out.println(distance(-2, -2, 3,3));
+
     }
     
 }
